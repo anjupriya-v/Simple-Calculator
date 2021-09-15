@@ -2,47 +2,74 @@ body {
     overflow-y: scroll;
 }
 .mainHeading {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-family: 'Times New Roman';
+}
+td {
+    border: none;
+}
+.mainContent {
+    background-color: rgb(39, 38, 38);
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 3px 3px 4px black;
+}
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    margin: 1px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.result {
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+    background-color: rgb(96, 117, 96);
+    border: 1px solid black;
+}
+hr {
+    border: 1px solid black;
+}
+table {
+    border: none;
+    border-collapse: collapse;
+}
+input {
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    box-shadow: 0 0 7px -1px white;
+    text-align: center;
+    border: 1px solid white;
+}
+.circle {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border-radius: 50% 50% 50% 50%;
+    outline: none;
+}
+.square {
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
 }
 @media (min-width:0px) and (max-width:240px) {
-    /*h*/
     .mainContent {
         width: 14em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 1.5em;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 0.5em;
         height: 4em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 1em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.1em;
@@ -50,72 +77,35 @@ body {
         margin-top: 0.2em;
         margin-bottom: 0.2em;
         font-size: 1em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .circle {
         padding-left: 1em;
         padding-right: 1em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.5em;
         width: 2.5em;
         padding-right: 0.5em;
         padding-top: 0px;
         padding-bottom: 0px;
-        outline: none;
-    }
-    td {
-        border: none;
     }
 }
 @media (min-width:241px) and (max-width:280px) {
-    /*h*/
     .mainContent {
         width: 15em;
         margin-bottom: 1em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 1.8em;
         padding-top: 1em;
         padding-bottom: 1em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 0.1em;
         height: 4em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 1em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.3em;
@@ -123,31 +113,17 @@ body {
         margin-top: 0.5em;
         margin-bottom: 0.5em;
         font-size: 0.9em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .circle {
         padding-left: 1.1em;
         padding-right: 1.1em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.8em;
         width: 2.5em;
         padding-top: 0px;
         padding-bottom: 0px;
         padding-right: 0.8em;
-        outline: none;
-    }
-    td {
-        border: none;
     }
     .first {
         margin-left: 0.01em;
@@ -164,44 +140,21 @@ body {
     }
 }
 @media (min-width:281px) and (max-width:320px) {
-    /*h*/
     .mainContent {
         width: 17em;
         margin-bottom: 1em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2em;
         padding-top: 0.6em;
         padding-bottom: 0.5em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 1em;
         height: 4.1em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 2em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.4em;
@@ -209,29 +162,15 @@ body {
         margin-top: 0.3em;
         margin-bottom: 0.3em;
         font-size: 1.04em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .circle {
         padding-left: 1em;
         padding-right: 1em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.6em;
         width: 2.5em;
         padding-right: 0.6em;
-        outline: none;
-    }
-    td {
-        border: none;
     }
     .point {
         padding-left: 1em;
@@ -248,45 +187,22 @@ body {
     }
 }
 @media (min-width:321px) and (max-width:360px) {
-    /*h*/
     .mainContent {
         width: 20em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 1.7em;
         padding-top: 0.9em;
         padding-bottom: 0.9em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         height: 5em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
         margin: 1em;
-        border: 1px solid black;
         width: 16em
     }
     hr {
         margin-top: 1.7em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     .first {
         margin-left: 0.4em;
@@ -298,29 +214,15 @@ body {
         margin-bottom: 0.44em;
         background-color: white;
         font-size: 1.3em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
-    }
-    td {
-        border: none;
     }
     .circle {
         padding-left: 0.8em;
         padding-right: 0.8em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.4em;
         width: 2.5em;
         padding-right: 0.4em;
-        outline: none;
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -333,44 +235,21 @@ body {
     }
 }
 @media (min-width:361px) and (max-width:384px) {
-    /*h*/
     .mainContent {
         width: 21.5em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.2em;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 1em;
         height: 5.5em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 2em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.5em;
@@ -378,11 +257,6 @@ body {
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.2em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .first {
         margin-left: 1.1em;
@@ -390,22 +264,13 @@ body {
     .circle {
         padding-left: 0.9em;
         padding-right: 0.9em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.6em;
         width: 2.5em;
         padding-right: 0.6em;
-        outline: none;
         padding-top: 0px;
         padding-bottom: 0px;
-    }
-    td {
-        border: none;
     }
     .point {
         padding-left: 1.1em;
@@ -416,44 +281,21 @@ body {
     }
 }
 @media (min-width:385px) and (max-width:414px) {
-    /*h*/
     .mainContent {
         width: 21.5em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.2em;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 1em;
         height: 5.5em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 2em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.4em;
@@ -461,11 +303,6 @@ body {
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.3em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .first {
         margin-left: 1em;
@@ -473,22 +310,13 @@ body {
     .circle {
         padding-left: 0.9em;
         padding-right: 0.9em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.6em;
         width: 2.5em;
         padding-right: 0.6em;
-        outline: none;
         padding-top: 0px;
         padding-bottom: 0px;
-    }
-    td {
-        border: none;
     }
     .point {
         padding-left: 1.1em;
@@ -499,44 +327,21 @@ body {
     }
 }
 @media (min-width:414px) and (max-width:480px) {
-    /*h*/
     .mainContent {
         width: 21.5em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.2em;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 1em;
         height: 5.5em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 2em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.45em;
@@ -544,11 +349,6 @@ body {
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.2em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .first {
         margin-left: 1.5em;
@@ -556,25 +356,16 @@ body {
     .circle {
         padding-left: 0.9em;
         padding-right: 0.9em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.7em;
         width: 2.3em;
         padding-right: 0.7em;
-        outline: none;
         padding-top: 0px;
         padding-bottom: 0px;
     }
     .allclear {
         padding-right: 1.8em;
-    }
-    td {
-        border: none;
     }
     .point {
         padding-left: 1em;
@@ -585,44 +376,21 @@ body {
     }
 }
 @media (min-width:481px) and (max-width:600px) {
-    /*h*/
     .mainContent {
         width: 23em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.4em;
         padding-top: 0.8em;
         padding-bottom: 0.9em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 1em;
         height: 5em;
-        border: 1px solid black;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
     }
     hr {
         margin-top: 1.5em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.6em;
@@ -630,11 +398,6 @@ body {
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.3em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .first {
         margin-left: 1.4em;
@@ -642,19 +405,13 @@ body {
     .circle {
         padding-left: 0.8em;
         padding-right: 0.8em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.5em;
         width: 2.2em;
         padding-right: 0.5em;
         padding-top: 0px;
         padding-bottom: 0px;
-        outline: none;
     }
     .allclear {
         padding-right: 1.8em;
@@ -666,49 +423,23 @@ body {
         padding-right: 1em;
         font-weight: bolder;
     }
-    td {
-        border: none;
-    }
 }
 @media (min-width:601px) and (max-width:720px) {
-    /*h*/
     .mainContent {
         width: 23em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.4em;
         padding-top: 0.8em;
         padding-bottom: 0.9em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 1em;
         height: 5em;
-        border: 1px solid black;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
     }
     hr {
         margin-top: 2em;
-        border: 1px none black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
         margin-left: 0.5em;
@@ -716,11 +447,6 @@ body {
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.3em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .first {
         margin-left: 1.27em;
@@ -728,10 +454,6 @@ body {
     .circle {
         padding-left: 0.9em;
         padding-right: 0.9em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .point {
         padding-left: 1.1em;
@@ -741,71 +463,36 @@ body {
         font-weight: bolder;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.7em;
         width: 2.5em;
         padding-right: 0.7em;
         padding-top: 0px;
         padding-bottom: 0px;
-        outline: none;
-    }
-    td {
-        border: none;
     }
 }
 @media (min-width:721px) and (max-width:1024px) {
-    /*h*/
     .mainContent {
         width: 21.8em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.4em;
         padding-top: 0.8em;
         padding-bottom: 0.7em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         height: 5em;
-        border: 1px solid black;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
         margin: 1em;
     }
     hr {
         margin-top: 1.5em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
-        background-color: rgb(7, 7, 7);
         margin-left: 0.5em;
         margin-right: 0.5em;
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.3em;
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
-        color: white;
-    }
-    td {
-        border: none;
     }
     .first {
         margin-left: 1.2em;
@@ -813,10 +500,6 @@ body {
     .circle {
         padding-left: 0.8em;
         padding-right: 0.8em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
         border-radius: 10px 10px 10px 10px;
@@ -839,57 +522,28 @@ body {
     }
 }
 @media (min-width:1025px) and (max-width:1440px) {
-    /*h*/
     .mainContent {
         width: 24em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.9em;
         padding-top: 0.6em;
         padding-bottom: 0.8em;
-        color: white;
-    }
-    .dot {
-        height: 0.5em;
-        width: 0.5em;
-        margin: 1px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
     }
     .result {
         margin: 1em;
         height: 5.2em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 2em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
-        border: 1px solid white;
         margin-left: 0.68em;
         margin-right: 0.68em;
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.2em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .first {
         margin-left: 1.25em;
@@ -897,17 +551,11 @@ body {
     .circle {
         padding-left: 1em;
         padding-right: 1em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.8em;
         width: 2.5em;
         padding-right: 0.8em;
-        outline: none;
     }
     .point {
         padding-left: 1m;
@@ -921,23 +569,17 @@ body {
     }
     td {
         letter-spacing: 1px;
-        border: none;
     }
 }
 @media (min-width:1441px) {
-    /*h*/
     .mainContent {
         width: 24em;
         margin-bottom: 2em;
-        background-color: rgb(39, 38, 38);
-        border-radius: 9px 9px 9px 9px;
-        box-shadow: 3px 3px 4px black;
     }
     .mainHeading {
         font-size: 2.9em;
         padding-top: 0.6em;
         padding-bottom: 0.8em;
-        color: white;
     }
     .dot {
         height: 0.5em;
@@ -950,33 +592,16 @@ body {
     .result {
         margin: 1em;
         height: 5.2em;
-        -moz-box-shadow: inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow: inset 0 0 10px #000000;
-        background-color: rgb(96, 117, 96);
-        border: 1px solid black;
     }
     hr {
         margin-top: 2em;
-        border: 1px solid black;
-    }
-    table {
-        border: none;
-        border-collapse: collapse;
     }
     input {
-        cursor: pointer;
-        border: 2px solid white;
         margin-left: 0.68em;
         margin-right: 0.68em;
         margin-top: 0.4em;
         margin-bottom: 0.4em;
         font-size: 1.2em;
-        border-radius: 10px 10px 10px 10px;
-        color: white;
-        background-color: rgb(7, 7, 7);
-        box-shadow: 0 0 7px -1px white;
-        text-align: center;
     }
     .first {
         margin-left: 1.25em;
@@ -984,17 +609,11 @@ body {
     .circle {
         padding-left: 1em;
         padding-right: 1em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        border-radius: 50% 50% 50% 50%;
-        outline: none;
     }
     .square {
-        border-radius: 10px 10px 10px 10px;
         padding-left: 0.8em;
         width: 2.5em;
         padding-right: 0.8em;
-        outline: none;
     }
     .point {
         padding-left: 1m;
@@ -1008,7 +627,6 @@ body {
     }
     td {
         letter-spacing: 1px;
-        border: none;
     }
 }
 #display-value {
