@@ -39,7 +39,7 @@ input {
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
     color: white;
-    background-color: rgb(7, 7, 7);
+  
     box-shadow: 0 0 7px -1px white;
     text-align: center;
     border: 1px solid white;
@@ -47,11 +47,13 @@ input {
 .circle {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+    background-color: rgb(7, 7, 7);
     border-radius: 50% 50% 50% 50%;
     outline: none;
 }
 .square {
     border-radius: 10px 10px 10px 10px;
+    background-color: rgb(7, 7, 7);
     outline: none;
 }
 @media (min-width:0px) and (max-width:240px) {
